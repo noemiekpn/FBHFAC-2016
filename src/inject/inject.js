@@ -1,4 +1,3 @@
-
 chrome.extension.sendMessage({}, function(response) {
 	alert($("#body").length);
 	var readyStateCheckInterval = setInterval(function() {
