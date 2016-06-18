@@ -68,6 +68,7 @@
 
 #fake-popup-header {
   background-color: #3b5998;
+  border-bottom: 1px solid #133783;
   height: 50px;
 }
 
@@ -76,19 +77,29 @@
   top: 25%;
   left: 50%;
   transform: translate(-50%, 0%);
+  width: 68%;
 }
 
 #fake-popup-content h1 {
   margin-bottom: 20px;
   font-size: 20px;
+  text-align: center;
 }
 
 #fake-popup-content li {
   margin-bottom: 10px;
+  font-size: 14px;
+  /*font-weight: bold;*/
 }
 
 #fake-popup-content img {
-  padding-left: 33%;
+  display: block;
+  margin: 15px auto;
+  width: 70px;
+}
+
+#fake-popup-content p {
+  text-align: center;
 }
 
 

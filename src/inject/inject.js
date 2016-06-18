@@ -2,12 +2,7 @@
 chrome.extension.sendMessage({}, function(response) {
 	var readyStateCheckInterval = setInterval(function() {
 
-		var xmlHttp = new XMLHttpRequest();
-    	xmlHttp.open( "GET", "http://www.andrewkuz.net/blooddrop", false ); // false for synchronous request
-    	xmlHttp.send( null );
-    	var ddd =  xmlHttp.responseText;
-		console.log("SOMETHING:" +ddd);
-	if (document.readyState === "complete" && ddd ==="t") {
+	if (document.readyState === "complete") {
 		clearInterval(readyStateCheckInterval);
 
 		var para = document.createElement("div");
@@ -62,7 +57,9 @@ chrome.extension.sendMessage({}, function(response) {
 								<li>Be at least 17 years old</li>\
 								<li>Have not donated blood in the last 56 days</li>\
 							</ul>\
-							<div id="drop_button"><img src="https://i.imgur.com/voCsxZH.png"></div>\
+							<div id="drop_button">\
+                <a href="http://www.andrewkuz.net/saksham"><img src="https://i.imgur.com/voCsxZH.png"></a>\
+                </div>\
 							<p><i>Ready? Click the drop to begin.</i></p>\
 						</div>\
 					</div>\
