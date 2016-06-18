@@ -337,9 +337,9 @@ var stylesArray = [
            
     // 3 seconds after the center of the map has changed, pan back to the
     // marker.
-           var secretMessages = ["http://webmd.com/bookanappoinment\nOpen: 8am-7pm", "http://bookanappoinment.com/bookanappoinment\nOpen: 8am-6pm", "http://webmd.com/bookanappoinment\nOpen: 9am-7pm"];
+           var secretMessages = ["<p>http://webmd.com/bookanappoinment <br>Open: 8am-7pm</p>", "<p>http://webmd.com/bookanappoinment <br>Open: 8am-7pm</p>", "<p>http://webmd.com/bookanappoinment <br>Open: 10am-5pm</p>","<p>http://webmd.com/bookanappoinment <br>Open: 8am-6:30pm</p>"];
   
-          attachSecretMessage(beachMarker, secretMessages[Math.floor((Math.random() * 2) + 0)]);
+          attachSecretMessage(beachMarker, secretMessages[Math.floor((Math.random() * 3) + 0)]);
           }
         }
 // Attaches an info window to a marker with the provided message. When the
