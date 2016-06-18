@@ -14,6 +14,8 @@
         height: 120%;
       }
       .button {
+        position: relative;
+        left:400px;
     background-color: white; /* Green */
     border: none;
     color: white;
@@ -38,6 +40,10 @@
     background-color: white;
     color: black;
   }
+  .button1:active{
+    background-color: :blue;
+    color: white;
+  }
   p.sansserif {
 
     font-family: "Trebuchet MS", Helvetica, sans-serif;
@@ -58,19 +64,24 @@
       var popA = {
         Bloodworks_Northwest_Seattle: {
           center: {lat: 47.60858899999999, lng: -122.3263258},
-          population: 10
+          population: 10,
+          content : "This is a test"
         },
         Bloodworks_Northwest__North_Seattle_Donor_Center: {
           center: {lat: 47.70487599999999, lng: -122.3422591},
-          population: 12
+          population: 12,
+          content : "This is a test2"
         },
         Puget_Sound_Blood_Center: {
+
           center: {lat: 47.60850539999999, lng: -122.326414},
-          population: 9
+          population: 9,
+          content : "This is a test3"
         },
         Biomat_USA: {
           center: {lat: 47.68588399999999, lng: -122.376398},
-          population: 6
+          population: 6,
+          content : "This is a test4"
         }
       };
       var popB = {
@@ -115,18 +126,202 @@
         },
         population: 30
         }
+      };
+
+      var popAB = {
+        PACLAB: {
+        center:
+        {
+        lat: 47.6213586,
+        lng: -122.186794
+        },
+        population: 30
+        },
+        Interpath_Laboratory_Seattle: {
+        center:
+        {
+        lat: 47.67441049999999,
+        lng: -122.3183652
+        },
+        population: 2
+        },
+
+        HiveBio_Community_Lab: {
+        center:
+        {
+        lat: 47.65901179999999,
+        lng: -122.2845832
+        },
+        population: 14
+        },
+
+        Bloodworks_Northwest_University_Lab: {
+        center:
+        {
+        lat: 47.6657182,
+        lng: -122.3011694
+        },
+        population: 30
+        },
+
+        Any_Lab_Test_Now: {
+        center:
+        {
+        lat: 47.5995323,
+        lng: -122.3093699
+        },
+        population: 28
+        }
       }
+      var popN = {
+        PACLAB: {
+        center:
+        {
+        lat: 47.6213586,
+        lng: -122.186794
+        },
+        population: 30
+        },
+        Interpath_Laboratory_Seattle: {
+        center:
+        {
+        lat: 47.67441049999999,
+        lng: -122.3183652
+        },
+        population: 2
+        },
 
+        HiveBio_Community_Lab: {
+        center:
+        {
+        lat: 47.65901179999999,
+        lng: -122.2845832
+        },
+        population: 14
+        },
 
+        Bloodworks_Northwest_University_Lab: {
+        center:
+        {
+        lat: 47.6657182,
+        lng: -122.3011694
+        },
+        population: 30
+        },
+
+        Any_Lab_Test_Now: {
+        center:
+        {
+        lat: 47.5995323,
+        lng: -122.3093699
+        },
+        population: 28
+        },
+         Puget_Sound_Blood_Center: {
+
+          center: {lat: 47.60850539999999, lng: -122.326414},
+          population: 9,
+          content : "This is a test3"
+        },
+        Biomat_USA: {
+          center: {lat: 47.68588399999999, lng: -122.376398},
+          population: 6,
+          content : "This is a test4"
+        }
+
+      }
+      var content = {
+        title1 : "This is a test"
+      };
+var stylesArray = [
+  {
+    "featureType": "water",
+    "elementType": "geometry",
+    "stylers": [
+      { "color": "#b1bdd6" }
+    ]
+  },{
+    "featureType": "water",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      { "color": "#ffffff" },
+      { "weight": 0.2 }
+    ]
+  },{
+    "featureType": "water",
+    "elementType": "labels.text.stroke",
+    "stylers": [
+      { "color": "#a0aecc" }
+    ]
+  },{
+    "featureType": "landscape",
+    "stylers": [
+      { "color": "#e8e5e5" }
+    ]
+  },{
+    "featureType": "administrative.province",
+    "stylers": [
+      { "weight": 0.5 },
+      { "color": "#d1d0cf" }
+    ]
+  },{
+    "featureType": "poi.park",
+    "stylers": [
+      { "visibility": "on" },
+      { "color": "#c5dea2" }
+    ]
+  },{
+    "featureType": "road",
+    "elementType": "geometry",
+    "stylers": [
+      { "color": "#f3f3f2" }
+    ]
+  },{
+    "featureType": "poi.park",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      { "visibility": "on" },
+      { "invert_lightness": true },
+      { "color": "#787878" }
+    ]
+  },{
+    "featureType": "administrative.country",
+    "stylers": [
+      { "color": "#868686" },
+      { "weight": 0.7 }
+    ]
+  },{
+    "featureType": "administrative.country",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      { "color": "#999999" }
+    ]
+  },{
+    "featureType": "poi.park",
+    "elementType": "labels.text.stroke",
+    "stylers": [
+      { "color": "#ffffff" }
+    ]
+  },{
+    "featureType": "administrative.country",
+    "elementType": "labels.text.stroke",
+    "stylers": [
+      { "color": "#ffffff" },
+      { "weight": 2.8 }
+    ]
+  }
+];
       function initMap(arr) {
         //var json = require('./BBSEA.json');
         // Create the map.
+
 
        var image = 'drop_icon.png'
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 12,
           center: {lat: 47.60858899999, lng: -122.32},
-          mapTypeId: google.maps.MapTypeId.TERRAIN
+          mapTypeId: google.maps.MapTypeId.TERRAIN,
+          styles: stylesArray
         });
      
         for (var city in arr) {
@@ -134,10 +329,33 @@
           var beachMarker = new google.maps.Marker({
             position: arr[city].center,
             map: map,
-            icon:image
+            icon:image,
+            note : arr[city].content
+
           });
+         
+           
+    // 3 seconds after the center of the map has changed, pan back to the
+    // marker.
+           var secretMessages = ['http://webmd.com/bookanappoinment', 'http://bookanappoinment.com/bookanappoinment', 'http://webmd.com/bookanappoinment', 'http://facebook.com/', 'http://webmd.com'];
+  
+          attachSecretMessage(beachMarker, secretMessages[0]);
+          }
+        }
+// Attaches an info window to a marker with the provided message. When the
+// marker is clicked, the info window will open with the secret message.
+          function attachSecretMessage(beachMarker, secretMessage) {
+            var infowindow = new google.maps.InfoWindow({
+            content: secretMessage
+            });
 
+            beachMarker.addListener('click', function() {
+            infowindow.open(beachMarker.get('map'), beachMarker);
+            });
+          }  
 
+          
+    
           // var cityCircle = new google.maps.Circle({
           //   strokeColor: '#FF0000',
           //   strokeOpacity: 0.8,
@@ -148,31 +366,47 @@
           //   center: arr[city].center,
                 
           // });  
-        }  
+          
+         
+     
+         
         // Construct the circle for each value in citymap.
-        // Note: We scale the area of the circle based on the population.
-      }
+      // Note: We scale the area of the circle based on the population.
+  
     </script>
-     <p class="sansserif" >Blood Groups </p>
+     <p class="sansserif" style="margin-left: 550px" >Blood Groups </p>
     <p><input type ="button" class="button button1" id="pressA" value="A"/>
     <input type ="button" class="button button1" id="pressB" value="B"/>
     <input type ="button" class="button button1" id="pressO" value="O"/>  
-    <input type ="button" class="button button1" id="pressN" value="Dont Know"/></p>  
+    <input type ="button" class="button button1" id="pressAB" value="AB"/> 
+    <input type ="button" class="button button1" id="pressN" value="Dont Know"/>
+
+
     <script>
     $(document).ready(function(){           
      // Removed the unnecessary `$(function() { ...` here and the matching closing bits at the end
      $("#pressA").click(function(){
-        initMap(popA);
         
+        initMap(popA, content);
+  
       });
      $("#pressB").click(function(){
-        initMap(popB);
+        initMap(popB, content);
         
       });
-    });
+    
       $("#pressO").click(function(){
-        initMap(popO);
+        initMap(popO, content);
         
+      });
+
+      $("#pressAB").click(function(){
+        initMap(popAB, content);
+        
+      });
+      $("#pressN").click(function(){
+        initMap(popN, content);
+      });
       });
 </script>
     
