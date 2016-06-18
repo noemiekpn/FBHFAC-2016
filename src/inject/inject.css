@@ -76,7 +76,7 @@
   top: 25%;
   left: 50%;
   transform: translate(-50%, 0%);
-  width: 100%;
+  width: 80%;
 }
 
 #fake-popup-content h1 {
@@ -85,14 +85,15 @@
   font-size: 20px;
 }
 
-#fake-popup-content ul {
-  margin: 0 60px;
-}
-
 #fake-popup-content li {
   font-size: 14px;
   margin-bottom: 10px;
 }
+
+#fake-popup-content img {
+  margin: 25px;
+}
+
 
 /* ------------------------------------------
 CSS3 FACEBOOK-STYLE BUTTONS (Nicolas Gallagher)
@@ -313,22 +314,4 @@ http://github.com/necolas/css3-facebook-buttons
 .uibutton-toolbar .uibutton,
 .uibutton-toolbar .uibutton-group {
     vertical-align: bottom;
-}
-
-
-/* ------------------------------------------------------------------------------------------------------------- BUTTON CONTAINER */
-#overlay{
-	background: rgba(0,0,0,1);
-	height: 100%;
-	width: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	display: none;
-	text-align: center;
-	color: white;
-}
-#overlay img{
-	margin-top: 10%;
-
 }

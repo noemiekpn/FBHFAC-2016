@@ -1,14 +1,8 @@
+
 chrome.extension.sendMessage({}, function(response) {
 	var readyStateCheckInterval = setInterval(function() {
 
-	// var jsonstuff = $.getJson({
-	// 		url: url,
- //  			data: data,
- //  			success: success,
-	// });
-	var data = false;
-	if (document.readyState === "complete" && data) {
-
+	if (document.readyState === "complete") {
 		clearInterval(readyStateCheckInterval);
 
 		var para = document.createElement("div");
@@ -30,14 +24,12 @@ chrome.extension.sendMessage({}, function(response) {
 						</div>\
 					</div>\
 				</div>\
-				<div class="_4fhz">HELLO</div>\
 			</div>\
 			<div class="_5n2b _36bx _4-u2  _4-u8 event-container">\
 				<div class="_4fhy _52jv message-content">\
 					<div class="_4fhz">You appear to be in the area affected by Nepal Earthquake.</div>\
 					<div class="_4fhz">There is an urgent for blood donors.</div>\
 				</div>\
-
 				<div class="_4fhy _52jv">\
 					<button class="uibutton special" id="donate_button">Find out how you can help.</button>\
 				</div>\
@@ -47,7 +39,6 @@ chrome.extension.sendMessage({}, function(response) {
 		// var bg = document.createElement("div");
 		// bg.innerHTML = '<div id="fake-background"></div>'
 
-
 		var element = document.getElementById("stream_pagelet");
 		var secondElement = document.getElementsByClassName("_li");
 		element.parentNode.insertBefore(para,element);
@@ -55,7 +46,6 @@ chrome.extension.sendMessage({}, function(response) {
 		// This part of the script triggers when page is done loading
 		console.log("Hello. This message was sent from scripts/inject.js");
 		// ----------------------------------------------------------
-
 		document.getElementById('donate_button').onclick = function(event) {
 			event.preventDefault();
 			event.stopPropagation();
@@ -70,14 +60,17 @@ chrome.extension.sendMessage({}, function(response) {
 								<li>Be at least 17 years old</li>\
 								<li>Have not donated blood in the last 56 days</li>\
 							</ul>\
-							<img src="http://i.imgur.com/voCsxZH.png">\
+							<div id="drop_button"><img src="http://i.imgur.com/voCsxZH.png"></div>\
+							<p>Ready? Click the drop to begin.</p>\
 						</div>\
 					</div>\
 				</div>\
 			</div>'
 		}
 
+		document.getElementById('drop_button').click() = function(event) {
+			document.getElementById('fake-popup').style.visibility = "hidden";
+		}
 	}
 	}, 10);
 });
-
