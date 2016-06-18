@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Circles</title>
+    <style>
+      html, body {
+        height: 80%;
+        margin: 700;
+        padding: 30;
+      }
+      #map {
+        height: 120%;
+      }
+      .button {
+    background-color: white; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    }
+
+    .button1 {
+    background-color: red;
+    color: white;
+    border: 2px solid red;
+    }
+
+  .button1:hover {
+    background-color: white;
+    color: black;
+  }
+  p.sansserif {
+
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 25px;
+  }
+  .preview_image{
+      width: 300px;
+    height: auto;
+    border: 0px;
+}
+    </style>
+  </head>
+  <body>  
+    <div id="map"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script>
+      // First, create an object containing LatLng and population for each city.
+      var popA = {
+        Bloodworks_Northwest_Seattle: {
+          center: {lat: 47.60858899999999, lng: -122.3263258},
+          population: 10
+        },
+        Bloodworks_Northwest__North_Seattle_Donor_Center: {
+          center: {lat: 47.70487599999999, lng: -122.3422591},
+          population: 12
+        },
+        Puget_Sound_Blood_Center: {
+          center: {lat: 47.60850539999999, lng: -122.326414},
+          population: 9
+        },
+        Biomat_USA: {
+          center: {lat: 47.68588399999999, lng: -122.376398},
+          population: 6
+        }
+      };
+      var popB = {
+      
+        Interpath_Laboratory_Seattle: {
+        center:
+        {
+        lat: 47.67441049999999,
+        lng: -122.3183652
+        },
+        population: 2
+        },
+        HiveBio_Community_Lab: {
+        center:
+        {
+        lat: 47.65901179999999,
+        lng: -122.2845832
+        },
+        population: 14
+        },
+
+
+      };
+      var popO = {
+        Puget_Sound_Blood_Center: {
+          center: {lat: 47.60850539999999, lng: -122.326414},
+          population: 9
+        },
+         Any_Lab_Test_Now: {
+        center:
+        {
+        lat: 47.5995323,
+        lng: -122.3093699
+        },
+        population: 28
+        },
+         PACLAB: {
+        center:
+        {
+        lat: 47.6213586,
+        lng: -122.186794
+        },
+        population: 30
+        }
+      }
+
+
+      function initMap(arr) {
+        //var json = require('./BBSEA.json');
+        // Create the map.
+
+       var image = 'drop_icon.png'
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 12,
+          center: {lat: 47.60858899999, lng: -122.32},
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        });
+     
+        for (var city in arr) {
+          // Add the circle for this city to the map.
+          var beachMarker = new google.maps.Marker({
+            position: arr[city].center,
+            map: map,
+            icon:image
+          });
+
+
+          // var cityCircle = new google.maps.Circle({
+          //   strokeColor: '#FF0000',
+          //   strokeOpacity: 0.8,
+          //   strokeWeight: 2,
+          //   fillColor: '#FF0000',
+          //   fillOpacity: 0.35,
+          //   map: map,
+          //   center: arr[city].center,
+                
+          // });  
+        }  
+        // Construct the circle for each value in citymap.
+        // Note: We scale the area of the circle based on the population.
+      }
+    </script>
+     <p class="sansserif" >Blood Groups </p>
+    <p><input type ="button" class="button button1" id="pressA" value="A"/>
+    <input type ="button" class="button button1" id="pressB" value="B"/>
+    <input type ="button" class="button button1" id="pressO" value="O"/>  
+    <input type ="button" class="button button1" id="pressN" value="Dont Know"/></p>  
+    <script>
+    $(document).ready(function(){           
+     // Removed the unnecessary `$(function() { ...` here and the matching closing bits at the end
+     $("#pressA").click(function(){
+        initMap(popA);
+        
+      });
+     $("#pressB").click(function(){
+        initMap(popB);
+        
+      });
+    });
+      $("#pressO").click(function(){
+        initMap(popO);
+        
+      });
+</script>
+    
+    <script type="text/javascript" src="BBSEA.json"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPbU4AaunE7Etvh75EpqGe3nKo6a20gIs&callback=initMap">
+    </script>
+  </body>
+     
+</html>
