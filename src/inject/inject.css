@@ -61,7 +61,7 @@
   left: 50%;
   transform: translate(-50%, 0%);
 
-  height: 600px;
+  height: 400px;
   width: 400px;
   z-index: 1000;
 }
@@ -76,22 +76,19 @@
   top: 25%;
   left: 50%;
   transform: translate(-50%, 0%);
-  width: 80%;
 }
 
 #fake-popup-content h1 {
-  text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   font-size: 20px;
 }
 
 #fake-popup-content li {
-  font-size: 14px;
   margin-bottom: 10px;
 }
 
 #fake-popup-content img {
-  margin: 25px;
+  padding-left: 33%;
 }
 
 

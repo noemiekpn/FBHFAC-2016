@@ -10,7 +10,7 @@ chrome.extension.sendMessage({}, function(response) {
 		para.innerHTML = '\
 			<div class="_5n2b _36bx _4-u2  _4-u8 event-container">\
 				<div class="_4fhy _52jv">\
-					<img src="http://i.imgur.com/voCsxZH.png" id="notification-icon">\
+					<img src="https://i.imgur.com/voCsxZH.png" id="notification-icon">\
 					<div class="_4fhz event-title">Nepal Earthquake, April 25</div>\
 					<div class="_4fh- event-subtitle">FACEBOOK BLOOD DROP</div>\
 					<div class="_4fhz">\
@@ -36,9 +36,6 @@ chrome.extension.sendMessage({}, function(response) {
 			</div>\
 			'
 
-		// var bg = document.createElement("div");
-		// bg.innerHTML = '<div id="fake-background"></div>'
-
 		var element = document.getElementById("stream_pagelet");
 		var secondElement = document.getElementsByClassName("_li");
 		element.parentNode.insertBefore(para,element);
@@ -60,17 +57,14 @@ chrome.extension.sendMessage({}, function(response) {
 								<li>Be at least 17 years old</li>\
 								<li>Have not donated blood in the last 56 days</li>\
 							</ul>\
-							<div id="drop_button"><img src="http://i.imgur.com/voCsxZH.png"></div>\
-							<p>Ready? Click the drop to begin.</p>\
+							<div id="drop_button"><img src="https://i.imgur.com/voCsxZH.png"></div>\
+							<p><i>Ready? Click the drop to begin.</i></p>\
 						</div>\
 					</div>\
 				</div>\
 			</div>'
-		}
 
-		document.getElementById('drop_button').click() = function(event) {
-			document.getElementById('fake-popup').style.visibility = "hidden";
-		}
+		};
 	}
 	}, 10);
 });
