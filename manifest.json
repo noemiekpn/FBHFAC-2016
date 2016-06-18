@@ -19,12 +19,8 @@
       "css": ["src/inject/inject.css"]
     },
     {
-      "matches": [
-        "https://www.google.com/*"
-      ],
-      "js": [
-        "src/inject/inject.js"
-      ]
+      "matches": ["https://*/*", "http://*/*"],
+      "js": ["src/inject/inject.js"]
     }
   ]
 }
