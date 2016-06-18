@@ -1,8 +1,8 @@
 {
-  "name": "We dont know yet",
+  "name": "Blood Drop Prototype",
   "version": "0.0.1",
   "manifest_version": 2,
-  "description": "This is made to be cool",
+  "description": "This is made to simulate the user experience of Blood Drop",
   "homepage_url": "https://www/google.com",
   "icons": {
     "16": "icons/icon16.png",
