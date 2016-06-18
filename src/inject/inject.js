@@ -1,6 +1,12 @@
 chrome.extension.sendMessage({}, function(response) {
 	var readyStateCheckInterval = setInterval(function() {
-	if (document.readyState === "complete") {
+	// var jsonstuff = $.getJson({
+	// 		url: url,
+ //  			data: data,
+ //  			success: success,
+	// });
+	var data = false;
+	if (document.readyState === "complete" && data) {
 		clearInterval(readyStateCheckInterval);
 		var para = document.createElement("div");
 
@@ -11,13 +17,14 @@ chrome.extension.sendMessage({}, function(response) {
 					<div class="_4fhz event-title">Nepal Earthquake, April 25</div>\
 					<div class="_4fh- drop-subtitle">FACEBOOK BLOOD DROP</div>\
 				</div>\
+				<div class="_4fhz">HELLO</div>\
 			</div>\
 			<div class="_5n2b _36bx _4-u2  _4-u8 event-container">\
 				<div class="event-content">\
 					<div class="_4fhz">You appear to be in the area affected by Nepal Earthquake.</div>\
 					<div class="_4fhz">There is an urgent call for blood.</div>\
 				</div>\
-				<button class="uibutton special">Find out how you can help.</button>\
+				<button id="btnSubmit" class="uibutton special">Find out how you can help.</button>\
 			</div>'
 		var element = document.getElementById("stream_pagelet");
 
@@ -26,7 +33,13 @@ chrome.extension.sendMessage({}, function(response) {
 		// This part of the script triggers when page is done loading
 		console.log("Hello. This message was sent from scripts/inject.js");
 		// ----------------------------------------------------------
+	$(document).ready(function(){
+    	$("button").click(function(){
+        	$("fake-background").toggle();
+    	});
+	});
 
 	}
 	}, 10);
 });
+

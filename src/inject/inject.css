@@ -255,3 +255,21 @@ http://github.com/necolas/css3-facebook-buttons
 .uibutton-toolbar .uibutton-group {
     vertical-align: bottom;
 }
+
+
+/* ------------------------------------------------------------------------------------------------------------- BUTTON CONTAINER */
+#overlay{
+	background: rgba(0,0,0,1);
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	text-align: center;
+	color: white;
+}
+#overlay img{
+	margin-top: 10%;
+
+}
