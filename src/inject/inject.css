@@ -9,8 +9,8 @@
 
 .event-container {
   margin-bottom: 10px;
+  overflow: hidden;
   padding: 10px;
-  position: relative;
 }
 
 .event-container .event-title {
@@ -18,21 +18,26 @@
   margin-bottom: 5px;
 }
 
-.event-container .event-content {
-  border-right: 1px solid #ccc;
-  padding: 10px;
-}
-
-.event-container button {
-  position: absolute;
-  right: 0;
-}
-
-.drop-subtitle {
+.event-container .event-subtitle {
   color: #777;
   font-weight: bold;
   letter-spacing: 1px;
   margin-bottom: 10px;
+}
+
+.event-container .column_2 {
+  float: left;
+  margin: 10px 0px;
+  padding: 0% 1%;
+  width: 48%;
+}
+
+.event-container .message-content {
+  padding: 10px;
+}
+
+.event-container button {
+  margin: 5px;
 }
 
 /* ------------------------------------------
