@@ -20,10 +20,7 @@
     },
     {
       "matches": ["https://*/*", "http://*/*"],
-      "js": ["src/inject/inject.js"]
+      "js": ["src/inject/jquery-3.0.0.min.js","src/inject/inject.js"]
     }
-  ],
-  "web_accessible_resources" :[
-    "../src/inject/img/drop_icon.png"
   ]
 }
