@@ -22,5 +22,8 @@
       "matches": ["https://*/*", "http://*/*"],
       "js": ["src/inject/inject.js"]
     }
+  ],
+  "web_accessible_resources" :[
+    "../src/inject/img/drop_icon.png"
   ]
 }
