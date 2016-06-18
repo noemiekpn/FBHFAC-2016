@@ -1,0 +1,136 @@
+
+{
+   "html_attributions" : [],
+   "results" : [
+      {
+         "formatted_address" : "921 Terry Ave, Seattle, WA 98104, United States",
+         "geometry" : {
+            "location" : {
+               "lat" : 47.60858899999999,
+               "lng" : -122.3263258
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "c71bb9533280469b4af0e4ba5aa6087fb14e52e7",
+         "name" : "Bloodworks Northwest - Seattle",
+         "opening_hours" : {
+            "open_now" : false,
+            "weekday_text" : []
+         },
+         "place_id" : "ChIJg1NRPLZqkFQRicnPwTeiIz0",
+         "rating" : 4.3,
+         "reference" : "CoQBcQAAAKbbH9QczTomjBY9_GC75WPMmNJBofumgo_AEHFC4XVj934uPZNG_0BvFVbFSnTuk-60MCGBxwYMR2CH_X7f9ljv4S-IIne4JlyAwfFM2vcAymmduHATOCfpVHBcx8_pUwgsc2SMIwwuMnPdj-LemdOmQLWJuUU1QM2LwfaAXG3zEhCKrSxNaBHuIzyUvtxDHcjSGhRKMYqmSXARezGdfi9iu7burJhRKg",
+         "types" : [ "health", "point_of_interest", "establishment" ]
+      },
+      {
+         "formatted_address" : "10357 Stone Ave N, Seattle, WA 98133, United States",
+         "geometry" : {
+            "location" : {
+               "lat" : 47.70487599999999,
+               "lng" : -122.3422591
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "2d2d1645deba926eb8853c707c853780e16863ca",
+         "name" : "Bloodworks Northwest - North Seattle Donor Center",
+         "opening_hours" : {
+            "open_now" : false,
+            "weekday_text" : []
+         },
+         "photos" : [
+            {
+               "height" : 300,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/118281251451738814442/photos\"\u003eBloodworks Northwest - North Seattle Donor Center\u003c/a\u003e"
+               ],
+               "photo_reference" : "CoQBcwAAAJR3MbGWC46do38i_dms4MRuwpV2CrVAuLldVrd6BV5UgjokcHPN5Cnm1wlZUze7h8MM-dZQ1p8cpzRrktDXfCJdiPrGxyBg6sMcozth87bliwmKj94tV4PbcKppJvE3--tGJgUs3OscTBtvtmMyoI8IB4nMAj5pe_OhxERd-yKkEhC9l8_zkgriQGzECdHijXUOGhSrDr69AEam0Jq_YXuiM1aC6bVFQw",
+               "width" : 1320
+            }
+         ],
+         "place_id" : "ChIJK30dHawWkFQRITPYyDrxICs",
+         "reference" : "CpQBhQAAAITE_hYP6_kiz_BJpJJllPh4EEn8NRz1gl5uqVOc9VQuKaBKjXhyiV0IwA6JjTd_6tOnkRecUCz8nb_wz7tNjF2GoeuGDCUgIbZLn0RPc57kV-sViVp6Rvwt6GhASC18xT_kq_FPy0JxJf1WYc6KG2gWR8p6ENmN729lor5vuO1duwSQqERBx8wc5Lpzpqi6zRIQ8U8hJtLwXaXhJ4QhrHPEiBoUQAx5IqtDIY9A_dHHnxXx5OIeEL8",
+         "types" : [ "health", "point_of_interest", "establishment" ]
+      },
+      {
+         "formatted_address" : "921 Terry Ave, Seattle, WA 98104, United States",
+         "geometry" : {
+            "location" : {
+               "lat" : 47.60850539999999,
+               "lng" : -122.326414
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "2d4fb63f055e31961b8e9dec161636e2552c8d67",
+         "name" : "Puget Sound Blood Center",
+         "place_id" : "ChIJg6IfObZqkFQRSMdQltHlfP0",
+         "reference" : "CnRsAAAAYZImXmDhW-xGf68nkwzJSqW10c7WUD0It625GYRVhgR5aWEMG4y-cKMGESnx0VBpFsPEUPJwOjG1E3rrb_74Yc-EifdsW0s8PrKav6Uda-IFaJ-U0EhUhAsfkRA2B7O1HXDg54W_2rC6FMBRSH73CxIQN-sF4hGFXl3IPzfUR54FuhoUg4SVXiJWKJxeqk6WBTpxYQkEc7M",
+         "types" : [ "health", "point_of_interest", "establishment" ]
+      },
+      {
+         "formatted_address" : "7726 15th Ave NW, Seattle, WA 98117, United States",
+         "geometry" : {
+            "location" : {
+               "lat" : 47.68588399999999,
+               "lng" : -122.376398
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "7092fd32dd70aba2d999643d7d18f186d21028ab",
+         "name" : "Biomat USA",
+         "opening_hours" : {
+            "open_now" : false,
+            "weekday_text" : []
+         },
+         "place_id" : "ChIJe1DKJCoUkFQRNgWBBtLtpig",
+         "rating" : 3.4,
+         "reference" : "CmRdAAAAM6brCsikvLWTKDKG_osBJ3QagwEx1NpxkkBj_ugs9XXsPPqh_sSA1VD0J9W-LQ2vegMJzx67nbcHokqwfOUrQjP_TQye6iqLqqoBWO8oBKUOm536dd_o8u9TIesVhgjDEhCB5yFso9Eje5XLW5QD5f3eGhR-wrdi-ObcPt3lhOy_4xbt_BbWGQ",
+         "types" : [ "health", "point_of_interest", "establishment" ]
+      },
+      {
+         "formatted_address" : "921 Terry Ave, Seattle, WA 98104, United States",
+         "geometry" : {
+            "location" : {
+               "lat" : 47.6085054,
+               "lng" : -122.3264141
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "7e50a22fab1ac1dd70fd9b83241a26d89bfd15d7",
+         "name" : "Puget Sound Blood Center: Lopez Jose MD",
+         "place_id" : "ChIJg1NRPLZqkFQR0y_CDC-9ARA",
+         "reference" : "CoQBegAAAP9XRQJbvV4Hv6Gqj6a8GkCKZnS8Xvh1B7MRwFkrFOXT-kmQrAPRdi0J58e7-8QdgzFC0Ugb-WsRsLsy_-EsRXrb4AclmP44KIWknu1wsNUwMdfkK12MD5ypDLZhH-ZxUsQOCwclKxWCaX_ZsPlW05E53Y2zoVNlnASMM-jhECB7EhCNIzTLMRTAbHu7tNAPoraKGhQbhAO_k5i6lQ73KvFJ7eXgEbu8OA",
+         "types" : [ "health", "point_of_interest", "establishment" ]
+      },
+      {
+         "formatted_address" : "1021 112th Ave NE, Bellevue, WA 98004, United States",
+         "geometry" : {
+            "location" : {
+               "lat" : 47.61974720000001,
+               "lng" : -122.1913431
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "7134295a8881ee8d3bd78ca3a951a3d726ec9e57",
+         "name" : "Bloodworks Northwest - Bellevue Donor Center",
+         "opening_hours" : {
+            "open_now" : false,
+            "weekday_text" : []
+         },
+         "photos" : [
+            {
+               "height" : 300,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/101172651601469119874/photos\"\u003eBloodworks Northwest - Bellevue Donor Center\u003c/a\u003e"
+               ],
+               "photo_reference" : "CoQBcwAAAGt6i8ltzb4ofCvKyhuyS-Ugj3Qi-XHzgrUDrQiNdUnFsmW7eSV96nTwcgs4j5b1-2KDt_6wuRnKVCJ3o9eehNVDvZAn9gdbfaJFnPPMrNd2WgkXSAKze1zV2WyB9L_sMgyul2v1OHyQ8r-nyNNAg0aEA7bEwUmrgmWHb7YGGzShEhCZAXXKqFiq1CFt2rvDb3NqGhQZNa0neXRpigROQ1QniLc3B199Gw",
+               "width" : 1320
+            }
+         ],
+         "place_id" : "ChIJJ41yfotskFQRRRg_wdKvPVY",
+         "rating" : 4.3,
+         "reference" : "CoQBfwAAAGyWXwIYVLjUABjDBxi-iEupWhlLOL53Q-eFW9SkralIAwnCaSocWHrcaL1MpCNQpO_6GSKJk3RMEfcPEAPk8zxoDs9qkufqP3Eixe2xeAyTh_ek79jdGS0RPOYUx7ml0uFoNp-sLZ-Zyu6XwjH6LcYHmAPgFLB4ys4gEO9RP83GEhDVRAJCpAzfDIDlDZLFiArMGhQG5tOVxIpbVEWJJKvzn06Mw1WSng",
+         "types" : [ "health", "point_of_interest", "establishment" ]
+      }
+   ],
+   "status" : "OK"
+}
