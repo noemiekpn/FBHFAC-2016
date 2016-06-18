@@ -2,7 +2,12 @@
 chrome.extension.sendMessage({}, function(response) {
 	var readyStateCheckInterval = setInterval(function() {
 
-	if (document.readyState === "complete") {
+		var xmlHttp = new XMLHttpRequest();
+    	xmlHttp.open( "GET", "http://www.andrewkuz.net/blooddrop", false ); // false for synchronous request
+    	xmlHttp.send( null );
+    	var ddd =  xmlHttp.responseText;
+		console.log("SOMETHING:" +ddd);
+	if (document.readyState === "complete" && ddd ==="t") {
 		clearInterval(readyStateCheckInterval);
 
 		var para = document.createElement("div");
